@@ -3,11 +3,24 @@
 }
 body{
   margin: 0;
+  padding: 0;
 }
+
+
+.container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
 .container_1{
   background-color: #1F2937;
   color: white;
-  height: 400px;
+  min-height: 400px;
+  width: 100%;
 }
 
 .header{
@@ -76,6 +89,7 @@ button{
 
 .container_2{
   height: 400px;
+  width: 100%;
 }
 
 .container_2 p{
@@ -111,6 +125,7 @@ button{
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .quote_text{
@@ -133,6 +148,7 @@ button{
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .small_container_4{
@@ -170,13 +186,22 @@ button:hover{
 
 .footer{
   background-color: #1F2937;
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .footer p{
   color: white;
   font: 18px light italic;
+}
+
+@media (max-width: 768px) {
+  .container_1{
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
 }
